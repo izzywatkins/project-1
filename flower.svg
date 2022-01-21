@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 516 535.45">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
+        stroke-width: 0.75px;
+      }
+
+      .cls-1 {
+        fill: url(#radial-gradient);
+      }
+
+      .cls-2 {
+        fill: url(#radial-gradient-2);
+      }
+
+      .cls-3 {
+        fill: url(#radial-gradient-3);
+      }
+
+      .cls-4 {
+        fill: url(#radial-gradient-4);
+      }
+
+      .cls-5 {
+        fill: url(#radial-gradient-5);
+      }
+
+      .cls-6 {
+        fill: url(#radial-gradient-6);
+      }
+
+      .cls-7 {
+        fill: #ffd972;
+        stroke-width: 0.5px;
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="31.11" cy="429.97" r="119.82" gradientTransform="matrix(-0.74, 0.68, 0.68, 0.74, -127.92, -141.68)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff78a0"/>
+      <stop offset="1" stop-color="#ecb38c"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-2" cx="255.34" cy="143.04" r="119.82" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" xlink:href="#radial-gradient"/>
+    <radialGradient id="radial-gradient-3" cx="401.69" cy="71.15" r="119.82" gradientTransform="translate(136.83 -146.46) rotate(45.05)" xlink:href="#radial-gradient"/>
+    <radialGradient id="radial-gradient-4" cx="410.82" cy="-17.88" r="119.82" gradientTransform="translate(510.66 -67.7) rotate(111.34)" xlink:href="#radial-gradient"/>
+    <radialGradient id="radial-gradient-5" cx="113.89" cy="165.45" r="119.82" gradientTransform="translate(369.22 557.86) rotate(180)" xlink:href="#radial-gradient"/>
+    <radialGradient id="radial-gradient-6" cx="293.8" cy="413.25" r="119.82" gradientTransform="translate(-123.46 755.91) rotate(-113.66)" xlink:href="#radial-gradient"/>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <path class="cls-1" d="M56.33,238.24c1.73,1.49,3.43,3,5,4.65A201.76,201.76,0,0,0,237,300.68a201.79,201.79,0,0,0-45.25-182.3C154,62.62,80,57.41,43.78,90.76,8.2,123.51,6.68,195.64,56.33,238.24Z"/>
+      <path class="cls-2" d="M346,117.38c-.26,2.27-.48,4.54-.55,6.83a201.83,201.83,0,0,1-90.1,161.49,201.79,201.79,0,0,1-90.19-164.77C155.19,54.32,206.1.38,255.34.38,303.7.38,353.67,52.41,346,117.38Z"/>
+      <path class="cls-3" d="M452.47,234.13c-1.8,1.42-3.55,2.87-5.23,4.43A201.73,201.73,0,0,1,269.3,288.88a201.83,201.83,0,0,1,52.89-180.22c40.11-54.12,114.25-56.2,149-21.35C505.39,121.53,503.87,193.66,452.47,234.13Z"/>
+      <path class="cls-4" d="M368.7,415.23c-2-1.08-4.05-2.1-6.16-3a201.83,201.83,0,0,1-117.62-142.7,201.85,201.85,0,0,1,186.29-24c65.67,15,97.39,82,79.47,127.87C493.08,418.42,426.43,446,368.7,415.23Z"/>
+      <path class="cls-5" d="M164.68,418.07c.27-2.27.48-4.54.56-6.83a201.76,201.76,0,0,1,90.1-161.49,201.82,201.82,0,0,1,90.18,164.77c10,66.62-40.95,120.56-90.18,120.56C207,535.08,157,483,164.68,418.07Z"/>
+      <path class="cls-6" d="M77.28,248.24c2.19-.67,4.36-1.38,6.49-2.23a201.83,201.83,0,0,1,184.07,17.72A201.79,201.79,0,0,1,153.11,412.45c-57,35.86-126.86,10.88-146.62-34.22C-12.91,333.93,14.69,267.28,77.28,248.24Z"/>
+      <circle class="cls-7" cx="255.34" cy="265.5" r="62.1"/>
+    </g>
+  </g>
+</svg>
