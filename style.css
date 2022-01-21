@@ -1,88 +1,70 @@
-.cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
-    stroke: #000;
-    stroke-miterlimit: 10;
-  }
+body {  
+  background: rgb(183,218,96);
+  background: radial-gradient(circle, rgba(183,218,96,1) 0%, rgba(135,200,95,0.8561799719887955) 54%, rgba(82,173,113,1) 83%);
+}
 
-  .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
-    stroke-width: 0.75px;
-  }
+.petals {
+  fill: #9bb5ff;
+  stroke-width: 0.75px;
+}
 
-  .cls-1 {
-    fill: cornflowerblue;
-  }
+.petals, .center {
+  stroke: #000;
+  stroke-miterlimit: 10;
+}
 
-  .cls-2 {
-    fill:cornflowerblue;
-  }
-
-  .cls-3 {
-    fill:cornflowerblue;
-  }
-
-  .cls-4 {
-    fill:cornflowerblue;
-  }
-
-  .cls-5 {
-    fill:cornflowerblue;
-  }
-
-  .cls-6 {
-    fill:cornflowerblue;
-  }
-
-  .cls-7 {
-    fill: #ffd972;
-    stroke-width: 0.5px;
-  }
+.center {
+  fill: #ffd972;
+  stroke-width: 0.5px;
+}
 
 svg {
-    overflow: visible;
+  overflow: visible;
 }
 
 .blue-flower {
-    width: 400px;
-    margin: auto;
+  width: 400px;
+  margin: auto;
 }
 
-.blue-flower .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
-    width: 400px;
-    margin: auto;
-    transform:rotate(0deg);
-    animation-name: blue-flower;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    transform-origin: center center;
+.blue-flower .petals {
+  width: 400px;
+  margin: auto;
+  transform:rotate(0deg);
+  animation-name: blue-flower;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: center center;
 }
 
 @keyframes blue-flower {
-    0% {
-        transform:rotate(0deg);
-    }
-    100% {
-        transform:rotate(359deg);
-    }
+  0% {
+      transform:rotate(0deg);
+  }
+  100% {
+      transform:rotate(359deg);
+  }
 }
 
-.blue-flower .cls-7 {
-    animation-name: bigger;
-    animation-duration: 400ms;
-    animation-iteration-count: infinite;
-    animation-fill-mode: forwards;
-    animation-delay: 3s;
-    transform-origin: center center;
+.blue-flower .center {
+  animation-name: bigger;
+  animation-duration: 400ms;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+  transform-origin: center center;
 }
 
 @keyframes  bigger {
-    0% {
-        transform:scale(1);
-    }
-    50% {
-        transform:scale(1.5);
-    }
-    100% {
-        transform:scale(.7);
-    }
+  0% {
+      transform:scale(1);
+  }
+  50% {
+      transform:scale(1.5);
+  }
+  100% {
+      transform:scale(.7);
+  }
 }
