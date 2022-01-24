@@ -1,7 +1,7 @@
 body {
   margin:0;
   height: 100vh;
-  overflow:visible;
+  overflow:hidden;
 }
 
 .ground {
@@ -31,6 +31,30 @@ body {
 .bigfoot-main {
   width: 900px;
   margin:auto;
+}
+
+.bigfoot-main .cls-3 {
+  width: 900px;
+  margin: auto;
+  transform:rotateX(0deg);
+  animation-name: body-shake;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: center center;
+}
+
+@keyframes body-shake {
+  0% {
+    transform:rotate(0deg);
+}
+50% {
+    transform:rotate(-1deg);
+}
+100% {
+  transform:rotate(0deg);
+  }
 }
 
 .bigfoot-main .hairs-main {
@@ -74,5 +98,27 @@ body {
   }
   100% {
     transform: translateY(0px) translateX(100px);
+  }
+}
+
+.bigfoot-main .eyes {
+  animation-name: blink;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1; transform:translateY(0px) translateX(0px);
+  }
+  50% {
+    opacity: 1; transform:translateY(-4px) translateX(5px);
+  }
+  75% {
+    opacity: 1;  transform:translateY(3px) translateX(0px);
+  }
+  100% {
+    opacity: 1;  transform:translateY(0px) translateX(0px);
   }
 }
