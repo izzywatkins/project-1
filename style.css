@@ -1,125 +1,53 @@
-body {  
-  background: rgb(183,218,96);
-  background: radial-gradient(circle, rgba(183,218,96,1) 0%, rgba(135,200,95,0.8561799719887955) 54%, rgba(82,173,113,1) 83%);
+.ground {
+  fill: #006838;
 }
 
-.petals {
-  fill: #9bb5ff;
-  stroke-width: 0.75px;
+.orange-accent {
+  fill: #ff9d73;
 }
 
-.petals, .center {
-  stroke: #000;
-  stroke-miterlimit: 10;
+.cls-3 {
+  fill: #5997ff;
 }
 
-.center {
-  fill: #ffd972;
-  stroke-width: 0.5px;
+.hairs-main {
+  fill: #5997ff;
 }
 
-svg {
-  overflow: visible;
+.eyes {
+  fill: #231f20;
 }
 
-.blue-flower {
-  width: 400px;
+.cloud {
+  fill: #afd6ff;
+}
+
+.bigfoot-main {
+  width: 900px;
+  margin:auto;
+}
+
+.bigfoot-main .hairs-main {
+  width: 900px;
   margin: auto;
-}
-
-.blue-flower .petals {
-  width: 400px;
-  margin: auto;
-  transform:rotate(0deg);
-  animation-name: blue-flower;
-  animation-duration: 3s;
+  transform:rotateX(0deg);
+  animation-name: hairs-shake;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   transform-origin: center center;
 }
 
-@keyframes blue-flower {
+@keyframes hairs-shake {
   0% {
-      transform:rotate(0deg);
-  }
-  100% {
-      transform:rotate(359deg);
-  }
+    transform:rotate(0deg);
 }
-
-.blue-flower .center {
-  animation-name: bigger;
-  animation-duration: 1s;
-  animation-iteration-count:initial;
-  animation-fill-mode: forwards;
-  animation-delay: 2s;
-  transform-origin: center center;
+50% {
+    transform:rotate(1.5deg);
 }
-
-@keyframes  bigger {
-  0% {
-      transform:scale(1);
-  }
-  50% {
-      transform:scale(1.5);
-  }
-  100% {
-      transform:scale(.7);
-  }
-}
-
- .petals:hover {
-    fill: lightblue;
-}
-
-.petals-pink {
-  fill: #debfff;
-  stroke-width: 0.75px;
-}
-
-.petals-pink, .center-pink {
-  stroke: #000;
-  stroke-miterlimit: 10;
-}
-
-.center-pink {
-  fill: #ffd972;
-  stroke-width: 0.5px;
-}
-
-.pink-flower {
-  width: 400px;
-  margin: auto;
-  margin-left: 60%;
-}
-
-.pink-flower .petals-pink {
-  width: 400px;
-  margin: auto;
+100% {
   transform:rotate(0deg);
-  animation-name: blue-flower;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  transform-origin: center center;
-}
-
-@keyframes pink-flower {
-  0% {
-      transform:rotate(0deg);
-  }
-  100% {
-      transform:rotate(359deg);
   }
 }
 
-.pink-flower .center-pink {
-  animation-name: bigger;
-  animation-duration: 1s;
-  animation-iteration-count:initial;
-  animation-fill-mode: forwards;
-  animation-delay: 2s;
-  transform-origin: center center;
-}
