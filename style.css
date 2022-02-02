@@ -47,14 +47,32 @@ main  {
   fill: #000000;
 }
 
+.bigfoot-main .blue-cloud {
+  width: 50px;
+  animation-name: cloud-float;
+  animation-duration: 10s;
+  animation-delay: 7s;
+  opacity: 0;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cloud-float {
+  0% {
+    opacity: 0; transform: translate(-20vw,50px);
+  }
+  100% {
+    opacity: 1; 
+  }
+}
+
 .reaching-hand .hand-main {
   width: 600px;
   margin: auto;
   animation-name: hand-move;
-  animation-duration: 20s;
+  animation-duration: 14s;
   animation-fill-mode: forwards;
-  animation-iteration-count:infinite;
-  transform-origin: center center;
+  animation-iteration-count:1;
   transform:translate(0deg);
   transform: translateX(100vw);
   transform: translateY(100vh);
@@ -62,7 +80,7 @@ main  {
 
 @keyframes hand-move {
   0% {
-    transform: translateX(-50vw);
+    transform: translateX(-50vw) translateY(-25vh);
   } 
   25% {
     transform: translate(0px,0px);
@@ -74,7 +92,7 @@ main  {
     transform: translate(0px,0px);
   }
   100% {
-    transform: translateX(55vw);
+    transform: translateX(55vw) translateY(-20vh);
   }
 }
 
