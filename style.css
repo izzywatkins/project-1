@@ -13,7 +13,7 @@ svg {
   position: absolute;
   bottom: 500px;
   width: 600px;
-  left: 500px;
+  left: 450px;
 }
 
 main  {
@@ -24,10 +24,6 @@ main  {
 
 .ground {
   fill: #006838;
-}
-
-.orange-accent {
-  fill: #ff9d73;
 }
 
 .cls-3 {
@@ -42,10 +38,6 @@ main  {
   fill: #231f20;
 }
 
-.cloud {
-  fill: #afd6ff;
-}
-
 .hand-main {
   fill: #000000;
 }
@@ -54,30 +46,37 @@ main  {
   width: 600px;
   margin: auto;
   animation-name: hand-move;
-  animation-duration: 5s;
+  animation-duration: 15s;
   animation-fill-mode: forwards;
-  animation-timing-function: ease-in;
   animation-iteration-count:infinite;
   transform-origin: center center;
-  transform:translate(100vw);
+  transform:translate(0deg);
+  transform: translateX(100vw);
+  transform: translateY(100vh);
 }
 
 @keyframes hand-move {
   0% {
-    transform:translateX(100px) translateY(50px);
+    transform: translateX(-50vw);
+  } 
+  25% {
+    transform: translate(0px,0px);
   } 
   50% {
-    transform:translate(100px,25px);
+    transform: translate(100px,70px);
+  }
+  75% {
+    transform: translate(0px,0px);
   }
   100% {
-    transform:translate(50px,50px);
+    transform: translateX(55vw);
   }
 }
 
 .bigfoot-main {
-  position: relative;
   width: 900px;
   margin:auto;
+  border: 1px solid red;
 }
 
 .bigfoot-main .cls-3 {
@@ -125,24 +124,6 @@ main  {
 }
 100% {
   transform:rotate(0deg);
-  }
-}
-
-.bigfoot-main .cloud {
-  animation-name: move;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-fill-mode: forwards;
-  transform:translateX(100vw);
-  transform:translateY(100vh);
-}
-
-@keyframes move {
-  0% {
-    transform:translateX(100vw);
-  }
-  100% {
-    transform:translateX(-30vw);
   }
 }
 
