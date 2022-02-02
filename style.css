@@ -1,7 +1,7 @@
 body {
   margin:0;
   height: 100vh;
-  overflow:hidden;
+  overflow:scroll;
 }
 
 svg {
@@ -13,7 +13,7 @@ svg {
   position: absolute;
   bottom: 500px;
   width: 600px;
-  left: 200px;
+  left: 500px;
 }
 
 main  {
@@ -64,13 +64,13 @@ main  {
 
 @keyframes hand-move {
   0% {
-    transform:translateY(0px) translateX(100px);
+    transform:translateX(100px) translateY(50px);
   } 
   50% {
-    transform:translateY(150px) translateX(50px);
+    transform:translate(100px,25px);
   }
   100% {
-    transform:translateY(100px) translateX(0px);
+    transform:translate(50px,50px);
   }
 }
 
@@ -132,20 +132,17 @@ main  {
   animation-name: move;
   animation-duration: 10s;
   animation-iteration-count: infinite;
-  animation-timing-function: ease-in;
   animation-fill-mode: forwards;
-  transform:translateX(100vw)
+  transform:translateX(100vw);
+  transform:translateY(100vh);
 }
 
 @keyframes move {
   0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(0px) translateX(50px);
+    transform:translateX(100vw);
   }
   100% {
-    transform: translateY(0px) translateX(100px);
+    transform:translateX(-30vw);
   }
 }
 
@@ -171,3 +168,12 @@ main  {
   }
 }
 
+.bigfoot-main .orange-accent {
+  transform:rotateX(0deg);
+  animation-name: hairs-shake;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: center center;
+}
