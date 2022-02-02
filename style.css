@@ -6,6 +6,7 @@ body {
 
 svg {
   overflow: visible;
+  display: block;
 }
 
 .reaching-hand {
@@ -46,7 +47,7 @@ main  {
   width: 600px;
   margin: auto;
   animation-name: hand-move;
-  animation-duration: 15s;
+  animation-duration: 20s;
   animation-fill-mode: forwards;
   animation-iteration-count:infinite;
   transform-origin: center center;
