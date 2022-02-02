@@ -168,12 +168,3 @@ main  {
   }
 }
 
-.bigfoot-main .orange-accent {
-  transform:rotateX(0deg);
-  animation-name: hairs-shake;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  transform-origin: center center;
-}
