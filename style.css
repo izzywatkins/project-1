@@ -50,9 +50,9 @@ main  {
 .bigfoot-main .blue-cloud {
   width: 50px;
   animation-name: cloud-float;
-  animation-duration: 10s;
-  animation-delay: 7s;
-  animation-timing-function: ease-in-out;
+  animation-duration: 12s;
+  animation-delay: 6s;
+  animation-timing-function: ease-in;
   opacity: 0;
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
@@ -62,11 +62,8 @@ main  {
   0% {
     opacity: 0; transform: translate(-20vw,50px);
   }
-  75% {
-    opacity: 1; transform: translate(-70,100);
-  }
   100% {
-    opacity: 1;
+    opacity: 1; transform: translateX(80vw) translateY(-70vh);
   }
 }
 
@@ -74,9 +71,9 @@ main  {
   width: 600px;
   margin: auto;
   animation-name: hand-move;
-  animation-duration: 14s;
+  animation-duration: 12s;
   animation-fill-mode: forwards;
-  animation-iteration-count:1;
+  animation-iteration-count:infinite;
   transform:translate(0deg);
   transform: translateX(100vw);
   transform: translateY(100vh);
